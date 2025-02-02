@@ -1,0 +1,137 @@
+Changed parameters
+line,line_number,para_name,value,helper_line,helper_para_name,helper_value,pos_of_appearance,whole_line,is_float,key_name
+
+Read parameters
+line,line_number,para_name,value,helper_line,helper_para_name,helper_value,pos_of_appearance,whole_line,is_float,key_name
+set    NNP,276,NNP,128,#HELPER LINE,,,1,False,False,bgc_NNP
+setenv QUEUE,360,QUEUE,big,#HELPER LINE,,,1,False,False,bgc_QUEUE
+setenv DIR /Net,529,DIR, /Net/Groups/BSI/scratch/mschlutow/EULAG_out/$JOBNAME,#HELPER LINE,,,1,True,False,bgc_DIR
+mpiifort,143029,mpiifort,-O3,#HELPER LINE,,,,False,False,mpiifort
+set    NNP,281,NNP,128,#HELPER LINE,,,2,False,False,levante_NNP
+setenv QUEUE,363,QUEUE,compute,#HELPER LINE,,,2,False,False,levante_QUEUE
+setenv PROJECT,407,PROJECT,bm1236,#HELPER LINE,,,,False,False,levante_PROJECT
+setenv DIR /work,534,DIR, /work/bm1236/b301055/EULAG_out/$JOBNAME,#HELPER LINE,,,1,True,False,levante_DIR
+#setenv OUTPUTDIR,530,OUTPUTDIR, /scratch/mschlutow/EULAG_out/$JOBNAME,#HELPER LINE,,,,True,False,OUTPUTDIR
+mpif90,143108,mpif90,-O3,#HELPER LINE,,,,False,False,mpif90
+#define TESTCASE,2119,TESTCASE,19,!HELPER LINE,,,,False,False,TESTCASE
+setenv NPX,186,NPX,4,#HELPER LINE,,,,False,False,NPX
+setenv NPY,187,NPY,4,#HELPER LINE,,,,False,False,NPY
+setenv NPZ,188,NPZ,8,#HELPER LINE,,,,False,False,NPZ
+setenv NTIME,345,NTIME,08:00:00,#HELPER LINE,,,,False,False,NTIME
+parameter ,715,m,128,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,mmm
+parameter ,715,n,128,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,n
+parameter ,715,l,128,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,l
+parameter ,870,dx00,3000.,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,dx00
+parameter ,870,dy00,3000.,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,dy00
+parameter ,870,dz00,3000.,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,dz00
+parameter ,871,dt00,1.0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,dt00
+parameter ,871,dtmax,4.0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,dtmax
+parameter ,871,lxyz,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,lxyz
+parameter ,995,nt,6*60*60,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,nt
+parameter ,995,noutp,60,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,noutp
+&,996,nplot,1e8,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,nplot
+&,996,nstore,30*60,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,nstore
+parameter ,1218,ibcx,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,2,False,False,ibcx
+parameter ,1218,ibcy,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,2,False,False,ibcy
+parameter ,1218,ibcz,0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,2,False,False,ibcz
+parameter ,1358,isflx,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,isflx
+parameter ,1359,inoise,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,inoise
+parameter ,1360,iblatt,0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,iblatt
+parameter ,1478,nspc,2,!HELPER LINE,,,,False,False,nspc
+parameter ,1537,istr,0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,False,istr
+parameter ,1537,zhz,2000.,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,True,zhz
+parameter ,1550,imetryc,1,!HELPER LINE,,,,False,False,imetryc
+parameter ,1550,ivctype,2,!HELPER LINE,,,,False,False,ivctype
+parameter ,1550,ihorizdef,0,!HELPER LINE,,,,False,False,ihorizdef
+parameter ,1550,ivertdef,1,!HELPER LINE,,,,False,False,ivertdef
+parameter ,1565,isphere,0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,isphere
+parameter ,1565,icylind,0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,icylind
+parameter ,1565,icorio,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,icorio
+parameter ,1565,ideep,0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,ideep
+#define,2187,TURBST,0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,TURBST
+#define,2188,TKE,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,TKE
+#define,2189,SGS,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,SGS
+#define,2190,CHEMIS,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,CHEMIS
+#define,2192,IMRSB,0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,IMRSB
+#define,2193,J3DIM,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,J3DIM
+#define,2194,MOISTMOD,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,MOISTMOD
+#define,2195,POLES,0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,POLES
+data,3332,initi,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,initi
+data,3333,lipps,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,lipps
+data,3463,iab,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,iab
+data,3463,iabth,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,iabth
+data,3463,iabqw,1,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,False,iabqw
+data,3468,dxabL,1e4,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,dxabL
+data,3468,towxL,1e10,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,towxL
+data,3469,dxabR,1e4,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,dxabR
+data,3469,towxR,1e10,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,towxR
+data,3470,dyab,1e4,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,dyab
+data,3470,towy,1e10,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,towy
+data,3477,zab,2000.0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,zab
+data,3477,towz,3600.0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,towz
+data,3690,g,9.80616,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,g
+data,3690,rg,287.04,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,rg
+data,3690,tt00,283.15,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,tt00
+&  th00,3691,th00,283.15,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,th00
+&  th00,3691,pr00,1.e5,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,pr00
+&  th00,3691,rh00,1.11,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,rh00
+data,3774,u00,7.65,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,u00
+data,3774,v00,2.34,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,v00
+data,3774,st,0.0e-5,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,st
+data,3774,u0z,0.0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,u0z
+data,3774,v0z,0.0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,v0z
+data,3955,fcr0,0.00014584,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,True,fcr0
+data,3955,ang,68.,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,True,ang
+data,3955,initprs,0.,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,True,initprs
+data,4017,ceps,.845,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,True,ceps
+data,4017,cL,0.845,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,True,cL
+data,4017,cm,.0856,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,True,cm
+data,4017,css,.165,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,True,css
+data,4017,prndt,.42,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,1,False,True,prndt
+data,4074,hf00,0.24,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,hf00
+data,4074,qf00,5e-5,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,qf00
+data,4074,cdrg,0.0,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,cdrg
+data,4074,rghn,0.60,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,rghn
+data,4165,rv,461.,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,rv
+data,4165,t00,273.16,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,t00
+data,4165,ee0,611.,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,ee0
+data,4165,hlat,2.53e6,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,hlat
+data,4166,rl00,0.50,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,rl00
+data,4170,dtm,30.,[^ ]+\s*\(\s*TESTCASE \s*==.*,TESTCASE,19,,False,True,dtm
+data cour_max_allowed,3827,cour_max_allowed,0.9,!HELPER LINE,,,,False,True,cour_max_allowed
+data timeadapt,3837,timeadapt,1,!HELPER LINE,,,,False,False,timeadapt
+ampns,6623,ampns,0.5e-3*nois,!HELPER LINE,,,,False,True,ampns
+parameter ,1138,iwrite,1,!HELPER LINE,,,,False,False,iwrite
+parameter ,1138,iwrite0,0,!HELPER LINE,,,,False,False,iwrite0
+parameter ,1138,irst,0,!HELPER LINE,,,,False,False,irst
+parameter ,1140,iomode,2,!HELPER LINE,,,,False,False,iomode
+parameter ,1141,ismode,NETCDFO,!HELPER LINE,,,,False,False,ismode
+parameter ,1142,iopar,3,!HELPER LINE,,,,False,False,iopar
+parameter ,1168,nfil,1,!HELPER LINE,,,,False,False,nfil
+parameter ,1168,nfilm,nfil,!HELPER LINE,,,,False,False,nfilm
+parameter ,1169,nfilo,1,!HELPER LINE,,,,False,False,nfilo
+parameter ,1169,nfilom,nfilo-1,!HELPER LINE,,,,False,False,nfilom
+parameter ,1170,dt_fil,0.4,!HELPER LINE,,,,False,False,dt_fil
+parameter ,1170,nt_fil0,0,!HELPER LINE,,,,False,False,nt_fil0
+parameter ,1170,nt_film0,60*150,!HELPER LINE,,,,False,False,nt_film0
+parameter ,1171,dt_filo,0.4,!HELPER LINE,,,,False,False,dt_filo
+parameter ,1171,nt_filo0,0,!HELPER LINE,,,,False,False,nt_filo0
+parameter ,1171,nt_filom0,60*150,!HELPER LINE,,,,False,False,nt_filom0
+parameter ,1173,nfstart,13,!HELPER LINE,,,,False,False,nfstart
+parameter ,1174,nanlfl,1,!HELPER LINE,,,,False,False,nanlfl
+parameter ,1175,idia,1,!HELPER LINE,,,,False,False,idia
+parameter ,1176,nplo,1,!HELPER LINE,,,,False,False,nplo
+chmsrc,8276,chmsrc,1e-2,!HELPER LINE,,,,False,True,chmsrc
+chmflx,8277,chmflx,0.0,!HELPER LINE,,,,False,True,chmflx
+"zo(i,j)",8310,"zo(i,j)",0.001,!HELPER LINE,,,1,False,True,LC1_zo
+"hfxp(i,j,:)",8313,"hfxp(i,j,:)","     = (/ 22.44,  4.76,  0.7,   0.67, -1.58/) ! 14 days average over toolik lake",!HELPER LINE,,,1,True,False,LC1_hfxp
+"qfxp(i,j,:)",8317,"qfxp(i,j,:)","     = (/ 37.98,  3.91, -1.57,  4.7,  -1.11 /)! 14 days average over toolik lake",!HELPER LINE,,,1,True,False,LC1_qfxp
+"chmsrc(i,j,1)",8320,"chmsrc(i,j,1)",1e-2,!HELPER LINE,,,1,False,True,LC1_chmsrc1
+"chmsrc(i,j,2)",8321,"chmsrc(i,j,2)",0.0,!HELPER LINE,,,1,False,True,LC1_chmsrc2
+"chmflx(i,j,1)",8322,"chmflx(i,j,1)",0.0,!HELPER LINE,,,1,False,True,LC1_chmflx1
+"zo(i,j)",8328,"zo(i,j)",0.220,!HELPER LINE,,,2,False,True,LC0_zo
+"hfxp(i,j,:)",8331,"hfxp(i,j,:)","     = (/ 15.42, -17.52, -44.91,  -2.46,  0.93/)! 14 days average over toolik lake",!HELPER LINE,,,2,True,False,LC0_hfxp
+"qfxp(i,j,:)",8335,"qfxp(i,j,:)","     = (/ 51.73,  -9.42, -40.72,   0.43, 2.38/)! 14 days average over toolik lake",!HELPER LINE,,,2,True,False,LC0_qfxp
+"chmsrc(i,j,1)",8338,"chmsrc(i,j,1)",0.0,!HELPER LINE,,,2,False,True,LC0_chmsrc1
+"chmsrc(i,j,2)",8339,"chmsrc(i,j,2)",1e-2,!HELPER LINE,,,2,False,True,LC0_chmsrc2
+"chmflx(i,j,1)",8340,"chmflx(i,j,1)",0.0,!HELPER LINE,,,2,False,True,LC0_chmflx1
