@@ -21,4 +21,4 @@ The work I do around the EULAG simulation. Included are scripts that facilitate 
 - load_again: loads run folders from the archive to the work directory so they can be used as starting points for reruns
 
 **config/**
--config: includes all paths that are custom for each user and system
+- config: includes all paths that are custom for each user and system
