@@ -7,6 +7,7 @@ The work I do around the EULAG simulation. Included are scripts that facilitate 
   - read_write_automation: parameter input/output, presets, log file and run series automation
   - test_series: basic building blocks and examples to use read_write_automation for actual runs and test series
   - cluster_handling: an auxiliary module that helps to communicate and check with the cluster
+
 **surface_model/**
 - this is used to generate land cover maps for the simulation's lower boundary
 - lake_statistics: this is the script that generates the land covers
